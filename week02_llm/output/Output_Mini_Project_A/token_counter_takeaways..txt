@@ -1,0 +1,21 @@
+1. Tokenization is Fundamental and Model-Specific:
+
+    Takeaway: 
+    '--> Large Language Models (LLMs) don't process raw text directly; instead, text is first converted into numerical "tokens" by a tokenizer. 
+    '--> Critically, the exact number of tokens for the same piece of text can vary between different LLM architectures (e.g., Llama vs. Mistral), as each model employs its own unique tokenization scheme. 
+    '--> This highlights that token counts are not universal and depend on the specific model being used.
+
+
+2. Authentication is Essential for Accessing Hugging Face Models/Components:
+
+    Takeaway: 
+    '--> Even for models considered "open" (like Mistral-7B-Instruct-v0.2), programmatic access via the huggingface_hub and transformers libraries often requires authentication using a valid Hugging Face API token. 
+    '--> Failing to provide a correct and active token, or not accepting the model's terms and conditions on the Hugging Face website, results in access errors (like the "403 Client Error: Forbidden" you encountered), blocking the download of necessary model components like tokenizers.
+
+
+
+3. Token Counts Directly Impact LLM Usage and Cost:
+
+    Takeaway:
+    '--> The number of tokens directly correlates with the length of the input and output processed by an LLM. 
+    '--> Understanding token counts is crucial for managing the model's context window limits (how much information it can process at once) and for estimating API costs, as many LLM services bill based on the number of tokens consumed.

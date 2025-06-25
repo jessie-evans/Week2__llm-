@@ -1,0 +1,4 @@
+Artificial intelligence (AI) is a broad field of computer science that enables machines to perform tasks that typically require human intelligence. 
+This includes learning, problem-solving, pattern recognition, and decision-making. 
+AI can be categorized into narrow AI (designed for specific tasks) and general AI (hypothetical, human-level intelligence). 
+Machine learning is a subset of AI that focuses on systems learning from data.

@@ -1,0 +1,4 @@
+Transformer models are a type of neural network architecture introduced in 2017, widely used in natural language processing (NLP) tasks. 
+They are particularly known for their attention mechanisms, which allow the model to weigh the importance of different words in the input sequence when processing each word. 
+This parallel processing capability makes them highly efficient for training on large datasets compared to previous architectures like RNNs. 
+Examples include GPT, BERT, and T5.

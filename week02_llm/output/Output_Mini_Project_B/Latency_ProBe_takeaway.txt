@@ -1,0 +1,21 @@
+1. Latency Variability is Inherent in Free-Tier LLM APIs:
+
+Takeaway: 
+    '--> Running the latency probe at different times of the day consistently showed fluctuations in response times (e.g., Together AI's Mistral model varying between 1.52 and 2.00 seconds). 
+    '--> This demonstrates that free-tier LLM endpoints, due to sharing resources among many users, do not guarantee consistent performance and are susceptible to external factors like network congestion and varying user demand.
+
+
+2. API Usage Requires Model-Specific Understanding:
+
+Takeaway: 
+    '--> The consistent "Model not supported for task text-generation" error with Hugging Face's Zephyr-7B-beta model highlighted that not all LLM endpoints behave uniformly. 
+    '--> Even within the same provider, models are often tuned for specific tasks (e.g., 'conversational' for chat models), necessitating precise API call methods. 
+    '--> This emphasizes the need to consult model documentation to ensure correct integration, preventing usage errors before performance can even be measured.
+
+
+3. Free Tiers are for Exploration, Not Production Guarantees:
+
+Takeaway: 
+    '--> The observed slowdowns and the potential for "429 Too Many Requests" (rate-limit) errors, though not explicitly hit with a 429 in this particular session, are characteristic of free-tier services. 
+    '--> These tiers typically operate on shared GPU resources and may have strict, often unadvertised, quotas or throttling mechanisms. 
+    '--> They are invaluable for initial experimentation and learning but are not designed for consistent, high-volume, or mission-critical production workloads.

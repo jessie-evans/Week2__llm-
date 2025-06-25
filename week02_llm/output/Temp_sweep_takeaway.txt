@@ -1,0 +1,23 @@
+1. Temperature Significantly Controls Output Form and Creativity:
+
+Takeaway: 
+
+    '--> At lower temperatures (0.0 and 0.4), the LLM generated outputs that were quite similar and included the <|assistant|> prefix, indicating a more deterministic and perhaps less "creative" path. 
+    '--> As the temperature increased (0.8 and 1.0), the outputs diversified, with the <|assistant|> prefix disappearing and the generated text showing more distinct phrasing and a clearer attempt at a three-line haiku structure, demonstrating temperature's direct impact on randomness and creative expression.
+
+
+2. LLMs Can Interpret Constraints Differently Than Expected:
+
+Takeaway: 
+
+    '--> Despite the prompt explicitly requesting a "two-line haiku," the model consistently produced three or four lines, particularly at lower temperatures. 
+    '--> This highlights that LLMs may have ingrained knowledge (e.g., a haiku typically has three lines) that can sometimes override explicit, counter-intuitive instructions in a prompt. 
+    '--> It underscores the challenge of precise structural control with language models.
+
+
+3. Higher Temperatures Can Lead to Better Adherence to Implied Forms (Even if Not Explicit Count):
+
+Takeaway: 
+
+    '--> While the model didn't hit "two lines," the outputs at temperatures 0.8 and 1.0 more closely resembled the implied structure of a traditional haiku (three lines) than the outputs at 0.0 and 0.4, which were longer and less poetic. 
+    '--> This suggests that increasing temperature, up to a point, can sometimes help the model break out of repetitive patterns and align more closely with common, learned linguistic forms or stylistic targets.
