@@ -7,23 +7,25 @@ Project Structure
 Your project directory should generally look like this:
 
 week02_llm/
-├── .venv/                      # Python Virtual Environment
+├── .venv/                      # Python Virtual Environment 
 ├── src/
 │   ├── token_counter.py        # Mini-Project A: Token counter script
 │   ├── latency_probe.py        # Mini-Project B: Latency probe script
-│ 
+│  
 ├── notebooks/                  # Folder for Jupyter Notebooks
-│   └── temp_sweep.ipynb        # Mini-Project C: Jupyter Notebook for Temperature Playground
-├── output/                     # Folder for screenshots and output logs (
-│   ├── Output_Mini_Project_A.png # Mini-Project A screenshot/output
-│   ├── Output_Mini_Project_B.png # Mini-Project B screenshot/output 
+│   ├── temp_sweep.ipynb        # Mini-Project C: Jupyter Notebook for Temperature Playground
+│   └── temp_sweep_Output.html  # Mini-Project C: Exported HTML of the Jupyter Notebook
+├── output/                     # Folder for screenshots and output logs 
+│   ├── Output_Mini_Project_A.png   # Mini-Project A screenshot/output 
+│   ├── Output_Mini_Project_B.png   # Mini-Project B first run screenshot/output
+│   ├── Output_Mini_Project_B_run2.png # Mini-Project B second run screenshot/output 
+│   ├── latency_reflection.txt  # Mini-Project B reflection paragraph
 │   ├── Temp_sweep_takeaway.txt # Mini-Project C takeaways
 │   
-├── prompt.txt                  # Mini-Project A: Sample prompt
-├── prompt_medium.txt           # Mini-Project A: Medium prompt (ensure this exists if used)
-├── prompt_long.txt             # Mini-Project A: Long prompt (ensure this exists if used)
+├── prompt.txt                  # Mini-Project A: Sample input prompt 
+├── prompt_medium.txt           # Mini-Project A: Medium-length input prompt 
+├── prompt_long.txt             # Mini-Project A: Long-length input prompt
 └── README.md                   # This file
-
 
 ---
 
